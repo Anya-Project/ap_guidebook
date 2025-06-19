@@ -6,6 +6,7 @@
 An highly flexible guidebook and manual platform for FiveM servers running on the QB-Core framework. Designed to provide easily accessible and manageable information for both regular citizens and specific jobs like Police, EMS, and more.
 
 ![Preview 1](https://i.imgur.com/uJzmGR7.png) 
+![Preview 2](https://i.imgur.com/ArLslng.jpeg)
 ---
 
 ## Core Features
