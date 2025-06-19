@@ -48,10 +48,18 @@ This is not just another guidebook script. It's a complete information system pa
       UNIQUE KEY `book_type_category` (`book_type`,`category`)
     );
     ```
-3.  **Add Items:** Open your main items file (usually `qb-core/shared.lua`) and add the required items. An example is provided in the `_items.lua` file in this repository.
-4.  **Ensure Script:** Add `ensure qb_guidebook` to your `server.cfg` file. Make sure it is placed **after** `qb-core` and `oxmysql`.
-5.  **Configure:** Set up the `config.lua` file to match your server's needs (job names, grade levels, etc.).
-6.  **Restart Server:** Restart your server completely to ensure all changes are loaded correctly.
+3.  **Add Items:** Open your main items file (usually `qb-core/shared.lua`) and add the required items.
+   ```lua
+guidebook                    = { name = 'guidebook',        label = 'Panduan Kota',            weight = 100, type = 'item', image = 'guidebook.png',        unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Sebuah buku panduan yang berisi semua informasi penting tentang kota ini.' },
+police_manual_book           = { name = 'police_sop_book',  label = 'Manual SOP Kepolisian',   weight = 100, type = 'item', image = 'police_manual_book.png',  unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Manual berisi Standar Operasional Prosedur untuk anggota kepolisian.' },
+ambulance_manual_book        = { name = 'ems_sop_book',     label = 'Manual SOP Medis',        weight = 100, type = 'item', image = 'ems_manual_book.png',     unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Manual berisi Standar Operasional Prosedur untuk anggota medis.' },
+mechanic_manual_book         = { name = 'mechanic_manual',  label = 'Manual Mekanik',          weight = 100, type = 'item', image = 'mechanic_manual_book.png',  unique = false, useable = true, shouldClose = true, combinable = nil, description = 'panduan mekanik' },
+government_manual_book       = { name = 'government_rules', label = 'Manual Aturan Pemkot',    weight = 100, type = 'item', image = 'government_manual_book.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Manual berisi protokol dan aturan resmi pemerintahan kota.' }
+```
+
+5.  **Ensure Script:** Add `ensure qb_guidebook` to your `server.cfg` file. Make sure it is placed **after** `qb-core` and `oxmysql`.
+6.  **Configure:** Set up the `config.lua` file to match your server's needs (job names, grade levels, etc.).
+7.  **Restart Server:** Restart your server completely to ensure all changes are loaded correctly.
 
 ---
 
@@ -63,7 +71,9 @@ This is not just another guidebook script. It's a complete information system pa
 *   `/ambulancemanual`: Opens the manual for the ambulance job.
 *   ...and so on, as configured.
 
-## For Developers (Exports)
+## For Developers 
+
+(Exports)
 
 You can open the guidebook from other server-side scripts using an export.
 
@@ -75,4 +85,4 @@ exports['qb_guidebook']:openBookForPlayer(1, 'mechanic', 'Daftar Harga')
 *   **Param 2:** `bookType` (string) - The type of book to open (e.g., 'warga', 'police').
 *   **Param 3:** `categoryName` (string, optional) - The name of the category to open directly.
 
----
+
