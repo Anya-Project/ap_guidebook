@@ -3,8 +3,8 @@
 ![Made for QB-Core](https://img.shields.io/badge/Made%20for-QB--Core-blueviolet)
 ![Version](https://img.shields.io/badge/Version-1.0-blue)
 
-An advanced and highly flexible guidebook and manual platform for FiveM servers running on the QB-Core framework. Designed to provide easily accessible and manageable information for both regular citizens and specific jobs like Police, EMS, and more.
-
+An highly flexible guidebook and manual platform for FiveM servers running on the QB-Core framework. Designed to provide easily accessible and manageable information for both regular citizens and specific jobs like Police, EMS, and more.
+![Preview 1](https://i.imgur.com/uJzmGR7.png) 
 ---
 
 ## Core Features
