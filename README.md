@@ -1,4 +1,4 @@
-# QB-Guidebook: A Dynamic In-Game Manual Platform
+# ap_guidebook
 
 ![Made for QB-Core](https://img.shields.io/badge/Made%20for-QB--Core-blueviolet)
 ![Version](https://img.shields.io/badge/Version-1.0-blue)
